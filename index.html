@@ -39,15 +39,17 @@
 <body>
 
     <div class="container my-6">
-        <h1 class="pt-5 mb-3">Getting start with Firebase.</h1>
+        <h1 class="text-center pt-5 mb-3">Getting start with Firebase.</h1>
 
-        <h1 class="text-center mb-4">Books Table</h1>
+        <h1 class="mb-4">Books Table</h1>
         <table class="table table-bordered table-hover">
             <thead class="table-dark">
             <tr>
                 <th>#</th>
                 <th>Title</th>
                 <th>Author</th>
+                <th>Created At</th>
+                <th>Delete</th>
             </tr>
             </thead>
             <tbody id="books-table-body"></tbody>
@@ -55,7 +57,7 @@
         
         <hr>
         
-        <h3>Adding books</h3>
+        <h3>Adding new book</h3>
         <form class="add">
             <label for="title">Title:</label>
             <div class="input-group">
@@ -68,21 +70,7 @@
             <button class="btn btn-outline-secondary mt-2">Add a new book</button>
         </form>
         <hr>
-        <h3>Deleting books</h3>
-        <form class="delete">
-            <label for="SelectIdToDel">Document id:</label>
-            <div class="input-group">
-                <select name="SelectIdToDel" class="form-control documentSelectDelete">
-                    <option value="">-- Select a Document to Delete --</option>
-                </select>
-            </div>
-
-            <h5 class="mt-3">For Deleting this Book Data click button below:</h5>
-            <pre id="documentDisplayDelete">No document selected yet.</pre>
-            <button class="btn btn-outline-secondary">delete a book</button>
-        </form>
-        <hr>
-        <h3>Updating books</h3>
+        <h3>Updating book</h3>
         <form class="update-title">
             <label for="SelectId">Document id:</label>
             <div class="input-group">
