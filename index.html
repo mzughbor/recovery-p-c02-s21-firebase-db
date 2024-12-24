@@ -40,6 +40,21 @@
 
     <div class="container my-6">
         <h1 class="pt-5 mb-3">Getting start with Firebase.</h1>
+
+        <h1 class="text-center mb-4">Books Table</h1>
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+            </thead>
+            <tbody id="books-table-body"></tbody>
+        </table>
+        
+        <hr>
+        
         <h3>Adding books</h3>
         <form class="add">
             <label for="title">Title:</label>
@@ -53,8 +68,9 @@
             <button class="btn btn-outline-secondary mt-2">Add a new book</button>
         </form>
         <hr>
+        <h3>Deleting books</h3>
         <form class="delete">
-            <label for="SelectIdToDel">Deleting Document id:</label>
+            <label for="SelectIdToDel">Document id:</label>
             <div class="input-group">
                 <select name="SelectIdToDel" class="form-control documentSelectDelete">
                     <option value="">-- Select a Document to Delete --</option>
@@ -66,8 +82,9 @@
             <button class="btn btn-outline-secondary">delete a book</button>
         </form>
         <hr>
+        <h3>Updating books</h3>
         <form class="update-title">
-            <label for="SelectId">Updating Document id:</label>
+            <label for="SelectId">Document id:</label>
             <div class="input-group">
                 <select name="SelectId" class="form-control documentSelect">
                     <option value="">-- Select a Document to Update --</option>
@@ -111,7 +128,7 @@
 
         <hr>
 
-        <h5>Logging up</h5>
+        <h5>Logging in</h5>
         <form class="login">
             <label for="email">email:</label>
             <div class="input-group">
